@@ -8,4 +8,4 @@
   that need be updated within DOM)
 
 - (only impure function)
-  > app function - (a mixed of HOF/Closure and state changes handler..)
+  > app function - (a mixed of HOF/Closure and state changes bskt..)

@@ -8,13 +8,18 @@
 .button-wrapper {
   display: flex;
   border: 1px solid lightgray;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   max-width: 350px;
   margin: 0 auto;
   min-height: 250px;
+}
+
+.counter-heading {
+  width: 100%;
+  text-align: center;
 }
 
 .button-minus {

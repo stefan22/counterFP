@@ -1,0 +1,51 @@
+.cal-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cal-heading {
+  border-bottom: 1px solid lightgray;
+}
+
+.cal-btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: navy;
+  color: #fafafa;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 2rem 0;
+  box-shadow: 0 1px 1px 0 rgba(128, 138, 216, 0.14),
+    0 2px 1px -1px rgba(86, 86, 148, 0.12),
+    0 1px 3px 0 rgba(44, 42, 156, 0.2);
+}
+
+.cal-field {
+  display: flex;
+  font-size: 0.9rem;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.cal-label {
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.cal-input {
+  padding: 7px 15px;
+}
+
+.cal-input:focus .cal-btn:focus {
+  outline: none;
+}
+
+.cal-form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,4 +1,4 @@
-# calcounter
+# counter, calcounter
 
 - basic vanilla javascript counter app....
 

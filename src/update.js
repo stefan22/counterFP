@@ -10,15 +10,15 @@ export function showFormMsg(showForm) {
 }
 
 function update(msg, model) {
-  console.log(model);
   switch (msg.type) {
     case MSGS.SHOW_FORM:
       return {
         ...model,
         showForm: msg.showForm,
+        description: '',
+        calories: 0,
       };
   }
-  console.log(model);
   return model;
 }
 

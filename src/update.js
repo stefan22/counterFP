@@ -21,7 +21,10 @@ export function mealNameMsg(description) {
 export function calorieValueMsg(calories) {
   return {
     type: MSGS.CALORIE_VALUE,
-    calories,
+    calories:
+      typeof calories === 'string'
+        ? parseInt(calories)
+        : calories,
   };
 }
 

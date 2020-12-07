@@ -1,18 +1,23 @@
 import hh from 'hyperscript-helpers';
 import { h } from 'virtual-dom';
-//import model from './model';
-import { showFormMsg } from './update';
+
+import {
+  showFormMsg,
+  mealNameMsg,
+  calorieValueMsg,
+} from './update';
 import './styles/calcounter.css';
 
 const { pre, div, h1, button, label, input, form } = hh(h);
 
-function fieldset(labelText, inputValue) {
+function fieldset(labelText, inputValue, oninput) {
   return div({ className: 'cal-field' }, [
     label({ className: 'cal-label' }, labelText),
     input({
       className: 'cal-input',
       type: 'text',
       value: inputValue,
+      oninput,
     }),
   ]);
 }
@@ -48,8 +53,12 @@ function formView(dispatch, model) {
         },
       },
       [
-        fieldset('Meal', description),
-        fieldset('Calories', calories || ''),
+        fieldset('Meal', description, e =>
+          dispatch(mealNameMsg(e.target.value)),
+        ),
+        fieldset('Calories', calories || '', e =>
+          dispatch(calorieValueMsg(e.target.value)),
+        ),
         buttonSet(dispatch),
       ],
     );

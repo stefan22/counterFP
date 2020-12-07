@@ -5,6 +5,7 @@ import {
   showFormMsg,
   mealNameMsg,
   calorieValueMsg,
+  saveMealMsg,
 } from './update';
 import './styles/calcounter.css';
 
@@ -50,6 +51,7 @@ function formView(dispatch, model) {
         className: 'cal-form',
         onsubmit: e => {
           e.preventDefault();
+          dispatch(saveMealMsg);
         },
       },
       [

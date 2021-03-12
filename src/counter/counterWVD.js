@@ -1,5 +1,5 @@
 import hh from 'hyperscript-helpers'
-import { h, diff, patch } from 'virtual-dom'
+import { h, diff } from 'virtual-dom'
 import createElement from 'virtual-dom/create-element'
 import './styles/counter.css'
 
@@ -46,7 +46,7 @@ function app (initCount, update, view, ele) {
   let count = initCount
   let currentView = view(dispatch, count)
 
-  let rootEle = createElement(currentView)
+  const rootEle = createElement(currentView)
   ele.appendChild(rootEle)
 
   function dispatch (msg) {
@@ -54,8 +54,9 @@ function app (initCount, update, view, ele) {
     const updatedView = view(dispatch, count)
     // changed since last rendered
     const patches = diff(currentView, updatedView)
+    console.log(patches)
     // passing min changes needed
-    rootEle = patch(rootNode, patches)
+    // rootEle = patch(rootNode, patches)
     currentView = updatedView
   }
 }

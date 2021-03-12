@@ -1,43 +1,43 @@
-import h from "hyperscript";
-import hh from "hyperscript-helpers";
-import "./styles/counter.css";
+import h from 'hyperscript'
+import hh from 'hyperscript-helpers'
+import './styles/counter.css'
 
-const { div, button } = hh(h);
+const { div, button } = hh(h)
 
 const message = {
-  ADD: "ADD",
-  SUBSTRACT: "SUBSTRACT",
-};
+  ADD: 'ADD',
+  SUBSTRACT: 'SUBSTRACT'
+}
 
-function update(msg, count) {
+function update (msg, count) {
   switch (msg) {
     case message.ADD:
-      return count + 1;
+      return count + 1
     case message.SUBSTRACT:
-      return count - 1;
+      return count - 1
     default:
-      return count;
+      return count
   }
 }
 
-function view(dispatch, count) {
-  return div({ className: "button-wrapper" }, [
-    div({ className: "button-label" }, `Count: ${count}`),
+function view (dispatch, count) {
+  return div({ className: 'button-wrapper' }, [
+    div({ className: 'button-label' }, `Count: ${count}`),
     button(
       {
-        className: "button-plus",
-        onclick: () => dispatch(message.ADD),
+        className: 'button-plus',
+        onclick: () => dispatch(message.ADD)
       },
-      "+",
+      '+'
     ),
     button(
       {
-        className: "button-minus",
-        onclick: () => dispatch(message.SUBSTRACT),
+        className: 'button-minus',
+        onclick: () => dispatch(message.SUBSTRACT)
       },
-      "-",
-    ),
-  ]);
+      '-'
+    )
+  ])
 }
 
 /**
@@ -49,19 +49,19 @@ function view(dispatch, count) {
  • updated view now equals current view
  */
 
-function app(initCount, update, view, ele) {
-  let count = initCount;
-  let currentView = view(dispatch, count);
-  ele.appendChild(currentView);
+function app (initCount, update, view, ele) {
+  let count = initCount
+  let currentView = view(dispatch, count)
+  ele.appendChild(currentView)
 
-  function dispatch(msg) {
-    count = update(msg, count);
-    let updatedView = view(dispatch, count);
-    ele.replaceChild(updatedView, currentView);
-    currentView = updatedView;
+  function dispatch (msg) {
+    count = update(msg, count)
+    const updatedView = view(dispatch, count)
+    ele.replaceChild(updatedView, currentView)
+    currentView = updatedView
   }
 }
 
-const rootApp = document.getElementById("app");
+const rootApp = document.getElementById('app')
 
-app(0, update, view, rootApp);
+app(0, update, view, rootApp)

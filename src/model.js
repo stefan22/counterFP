@@ -4,7 +4,7 @@ const initModel = {
   showForm: false,
   nextId: 0,
   editId: null,
-  meals: [],
-};
+  meals: []
+}
 
-export default initModel;
+export default initModel

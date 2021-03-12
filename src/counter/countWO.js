@@ -40,14 +40,6 @@ function view(dispatch, count) {
   ]);
 }
 
-/**
- * app fn
- • when dispatch fn fires off as a result of an onclick event
- • a msg is passed to update fn  and match by case to do count math
- • its return val now the updated view state count value
- • updated view and current view get passed to replaceChild DOM method
- • updated view now equals current view
- */
 
 function app(initCount, update, view, ele) {
   let count = initCount;

@@ -51,13 +51,13 @@ jobs:
           
           ACTIONS_RUNNER_DEBUG: true
           ANSIBLE_DIRECTORY: /src
-          CSS_FILE_NAME: .stylelintrc.json
+          CSS_FILE_NAME: .stylelintrc.yml
           
           FILTER_REGEX_EXCLUDE: .*src/.*
           
           IGNORE_GITIGNORED_FILES: true
           
-          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          # JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
           
           JAVASCRIPT_DEFAULT_STYLE: prettier
           

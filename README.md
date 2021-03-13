@@ -5,8 +5,8 @@
 
 ## JavaScript App implementations &nbsp; :pill:
 
-1 ___Hyperscript.js___ - src/counter/countWO `folder App` implementation (_to create DOM element/objects with JS props_)
+1. ___Hyperscript.js___ - src/counter/countWO `folder App` implementation (_to create DOM element/objects with JS props_)
 
-2 ___VirtualDOM.js___ - src/counter/counterWVD `folder App` implementation  (_to re-render just nodes in need of updating_)
+2. ___VirtualDOM.js___ - src/counter/counterWVD `folder App` implementation  (_to re-render just nodes in need of updating_)
 
 ##### Bundled with Webpack

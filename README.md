@@ -9,4 +9,4 @@
 
 2 ___VirtualDOM.js___ - src/counter/counterWVD `folder App` implementation  (_to re-render just nodes in need of updating_)
 
-##### Bundle with Webpack
+##### Bundled with Webpack

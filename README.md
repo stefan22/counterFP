@@ -1,6 +1,6 @@
 # Counters &nbsp; :hourglass:
 
-Repo stays - i like
+
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/counterFP.git)
 

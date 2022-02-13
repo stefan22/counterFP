@@ -1,6 +1,8 @@
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/counterFP.git)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/counterFP.git) &nbsp; ![GitHub last commit](https://img.shields.io/github/last-commit/stefan22/rjs-redux?color=red&style=flat-square) &nbsp; [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react) &nbsp; 
 
 
+
+<br />
 
 
 

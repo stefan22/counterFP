@@ -1,13 +1,12 @@
-# Counters &nbsp; :hourglass:
-
-
-
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/counterFP.git)
 
 
 
 
-<h2 align="center">Counter app 🕛</h2>
+
+
+
+<h2 align="center">Counter app &nbsp; 🕛</h2>
 
 
 1. ___With Hyperscript.js___ 

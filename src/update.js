@@ -60,7 +60,7 @@ function update (msg, model) {
   return model
 }
 
-function addMealMsg (model) {
+function addMealMsg (msg,model) {
   const { nextId, description, calories } = model
   const meal = { id: nextId, description, calories }
   const meals = [...model.meals, meal]

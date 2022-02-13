@@ -7,7 +7,7 @@
 
 
 
-<h2 align="center">Counter app immplementations 💊</h2>
+<h2 align="center">Counter app 🕛</h2>
 
 
 1. ___With Hyperscript.js___ 
